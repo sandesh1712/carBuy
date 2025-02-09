@@ -1,11 +1,11 @@
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
+import Auth from "./components/Auth";
 
-import Login from "./components/login";
-
-export default function App(){
-
-    return <>
-     <Login/>
-    </>
+export default function App() {
+  return (
+    <BrowserRouter>
+     <Auth/>
+    </BrowserRouter>
+  );
 }
