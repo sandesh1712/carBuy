@@ -1,17 +1,12 @@
-#login-container {
-    background: url("../../../public/assets/images/login-background.png") no-repeat fixed;
-    background-size: cover; 
-    background-position: center;
-    height: 100vh;
-}
 
 #login-box {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 20px;
   position: absolute;
   margin: auto;
-  right: 150px;
-  top: -300px;
+  right: 0;
+  top: 0;
+  left: 0;
   bottom: 0;
   min-width: 400px;
   width: max-content;
@@ -23,6 +18,7 @@
 
 .form-control {
  margin: 5px 0px;
+ border: 1px solid grey !important;
 }
 
 .link {
@@ -44,4 +40,14 @@
 }
 
 
+@media only screen and (max-width: 800px) {
+    #login-box {
+        transform: scale(0.9);
+    }    
+}
 
+@media only screen and (max-width: 400px) {
+    #login-box {
+        transform: scale(0.7);
+    }   
+}
